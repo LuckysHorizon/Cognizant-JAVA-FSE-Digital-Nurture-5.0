@@ -1,6 +1,8 @@
 package test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.Mockito.*;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -124,6 +126,21 @@ public class CalculatorTest {
 
         // Assert
         assertNull(value, "Value should be null");
+    }
+
+    @Test
+    void testArgumentMatcher() {
+
+        Calculator calculator = mock(Calculator.class);
+
+        // Match any integer values
+        when(calculator.add(anyInt(), anyInt())).thenReturn(100);
+
+        assertEquals(100, calculator.add(10, 20));
+        assertEquals(100, calculator.add(5, 7));
+        assertEquals(100, calculator.add(200, 300));
+
+        verify(calculator, times(3)).add(anyInt(), anyInt());
     }
 
     @AfterEach
