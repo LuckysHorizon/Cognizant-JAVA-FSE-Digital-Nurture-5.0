@@ -1,5 +1,7 @@
 package test;
 
+import java.util.Random;
+
 public class Calculator {
 	public int add(int firstNumber, int secondNumber)
 	{
@@ -12,6 +14,6 @@ public class Calculator {
 	}
 	public int random()
 	{
-		return (int) Math.random();
+		return new Random().nextInt(100);
 	}
 }
