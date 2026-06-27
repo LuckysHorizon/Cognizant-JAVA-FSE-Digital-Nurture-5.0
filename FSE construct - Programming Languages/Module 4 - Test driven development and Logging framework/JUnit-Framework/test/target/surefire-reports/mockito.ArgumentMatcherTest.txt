@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: mockito.ArgumentMatcherTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.270 s -- in mockito.ArgumentMatcherTest

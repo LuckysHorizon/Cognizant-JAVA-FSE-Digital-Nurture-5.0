@@ -1,0 +1,824 @@
+2026-06-27 13:30:37.031 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:30:37.033 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:30:37.034 [main] INFO  logging.BankingServiceLogger - Deposit request - Account: ACC-001, Amount: -100.0
+2026-06-27 13:30:37.034 [main] WARN  logging.BankingServiceLogger - Invalid deposit amount: -100.0
+2026-06-27 13:30:37.036 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:30:37.037 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:30:37.038 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-002 with initial balance: 500.0
+2026-06-27 13:30:37.039 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-002
+2026-06-27 13:30:37.039 [main] DEBUG logging.BankingServiceLogger - Balance inquiry for account: ACC-002
+2026-06-27 13:30:37.040 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:30:37.040 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:30:37.041 [main] INFO  logging.BankingServiceLogger - Withdrawal request - Account: ACC-001, Amount: 5000.0
+2026-06-27 13:30:37.041 [main] WARN  logging.BankingServiceLogger - Insufficient funds - Account: ACC-001, Balance: 1000.0, Requested: 5000.0
+2026-06-27 13:30:37.042 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:30:37.043 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:30:37.043 [main] INFO  logging.BankingServiceLogger - Withdrawal request - Account: ACC-001, Amount: 300.0
+2026-06-27 13:30:37.043 [main] INFO  logging.BankingServiceLogger - Withdrawal successful - Account: ACC-001, Amount: 300.0
+2026-06-27 13:30:37.044 [main] DEBUG logging.BankingServiceLogger - Balance inquiry for account: ACC-001
+2026-06-27 13:30:37.045 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:30:37.045 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:30:37.046 [main] DEBUG logging.BankingServiceLogger - Balance inquiry for account: FAKE
+2026-06-27 13:30:37.047 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:30:37.048 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:30:37.048 [main] INFO  logging.BankingServiceLogger - Deposit request - Account: ACC-001, Amount: 500.0
+2026-06-27 13:30:37.048 [main] INFO  logging.BankingServiceLogger - Deposit successful - Account: ACC-001, New Balance: 1500.0
+2026-06-27 13:30:37.048 [main] DEBUG logging.BankingServiceLogger - Balance inquiry for account: ACC-001
+2026-06-27 13:30:37.053 [main] ERROR logging.LoggingBasics - Division by zero error occurred
+java.lang.ArithmeticException: / by zero
+	at logging.LoggingBasics.demonstrateExceptionLogging(LoggingBasics.java:25)
+	at logging.LoggingBasicsTest.lambda$testExceptionLogging$2(LoggingBasicsTest.java:25)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3168)
+	at logging.LoggingBasicsTest.testExceptionLogging(LoggingBasicsTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-27 13:30:37.057 [main] ERROR logging.LoggingBasics - Null pointer exception: Cannot invoke "String.length()" because "text" is null
+java.lang.NullPointerException: Cannot invoke "String.length()" because "text" is null
+	at logging.LoggingBasics.demonstrateExceptionLogging(LoggingBasics.java:32)
+	at logging.LoggingBasicsTest.lambda$testExceptionLogging$2(LoggingBasicsTest.java:25)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3168)
+	at logging.LoggingBasicsTest.testExceptionLogging(LoggingBasicsTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-27 13:30:37.059 [main] INFO  logging.LoggingBasics - Processing data:   hello  
+2026-06-27 13:30:37.060 [main] DEBUG logging.LoggingBasics - Data length: 9
+2026-06-27 13:30:37.060 [main] INFO  logging.LoggingBasics - Data processed successfully: HELLO
+2026-06-27 13:30:37.061 [main] INFO  logging.LoggingBasics - Processing data: null
+2026-06-27 13:30:37.061 [main] WARN  logging.LoggingBasics - Received null data, returning empty string
+2026-06-27 13:30:37.063 [main] INFO  logging.LoggingBasics - User 'TestUser' logged in after 3 attempts
+2026-06-27 13:30:37.063 [main] DEBUG logging.LoggingBasics - Login details - User: TestUser, Attempts: 3, Timestamp: 1782547237063
+2026-06-27 13:30:37.065 [main] TRACE logging.LoggingBasics - TRACE level: Most detailed information
+2026-06-27 13:30:37.065 [main] DEBUG logging.LoggingBasics - DEBUG level: Debugging information
+2026-06-27 13:30:37.065 [main] INFO  logging.LoggingBasics - INFO level: General information
+2026-06-27 13:30:37.065 [main] WARN  logging.LoggingBasics - WARN level: Warning - potential issue
+2026-06-27 13:30:37.066 [main] ERROR logging.LoggingBasics - ERROR level: Error occurred
+2026-06-27 13:30:37.071 [main] INFO  logging.StudentManagementLogger - Enrolling student - Name: Diana, Course: Biology
+2026-06-27 13:30:37.071 [main] INFO  logging.StudentManagementLogger - Student enrolled - ID: 1
+2026-06-27 13:30:37.071 [main] DEBUG logging.StudentManagementLogger - Adding grade 80 for student ID: 1
+2026-06-27 13:30:37.071 [main] INFO  logging.StudentManagementLogger - Grade added - Student: 1, Grade: 80, Total Grades: 1
+2026-06-27 13:30:37.071 [main] DEBUG logging.StudentManagementLogger - Adding grade 90 for student ID: 1
+2026-06-27 13:30:37.071 [main] INFO  logging.StudentManagementLogger - Grade added - Student: 1, Grade: 90, Total Grades: 2
+2026-06-27 13:30:37.071 [main] DEBUG logging.StudentManagementLogger - Calculating average for student: 1
+2026-06-27 13:30:37.077 [main] INFO  logging.StudentManagementLogger - Average calculated - Student: 1, Average: 85.0
+2026-06-27 13:30:37.080 [main] INFO  logging.StudentManagementLogger - Enrolling student - Name: Bob, Course: Math
+2026-06-27 13:30:37.080 [main] INFO  logging.StudentManagementLogger - Student enrolled - ID: 1
+2026-06-27 13:30:37.081 [main] DEBUG logging.StudentManagementLogger - Adding grade 85 for student ID: 1
+2026-06-27 13:30:37.082 [main] INFO  logging.StudentManagementLogger - Grade added - Student: 1, Grade: 85, Total Grades: 1
+2026-06-27 13:30:37.083 [main] INFO  logging.StudentManagementLogger - Enrolling student - Name: Eve, Course: Chemistry
+2026-06-27 13:30:37.084 [main] INFO  logging.StudentManagementLogger - Student enrolled - ID: 1
+2026-06-27 13:30:37.084 [main] DEBUG logging.StudentManagementLogger - Calculating average for student: 1
+2026-06-27 13:30:37.084 [main] WARN  logging.StudentManagementLogger - No grades available for student: 1
+2026-06-27 13:30:37.086 [main] DEBUG logging.StudentManagementLogger - Adding grade 80 for student ID: 999
+2026-06-27 13:30:37.086 [main] ERROR logging.StudentManagementLogger - Student not found: 999
+2026-06-27 13:30:37.088 [main] INFO  logging.StudentManagementLogger - Enrolling student - Name: Charlie, Course: Physics
+2026-06-27 13:30:37.088 [main] INFO  logging.StudentManagementLogger - Student enrolled - ID: 1
+2026-06-27 13:30:37.089 [main] DEBUG logging.StudentManagementLogger - Adding grade 150 for student ID: 1
+2026-06-27 13:30:37.089 [main] WARN  logging.StudentManagementLogger - Invalid grade value: 150 for student: 1
+2026-06-27 13:30:37.091 [main] INFO  logging.StudentManagementLogger - Enrolling student - Name: Alice, Course: Computer Science
+2026-06-27 13:30:37.091 [main] INFO  logging.StudentManagementLogger - Student enrolled - ID: 1
+2026-06-27 13:30:37.105 [main] INFO  lombokdemo.DatabaseConnection - Executing query: 
+2026-06-27 13:30:37.106 [main] ERROR lombokdemo.DatabaseConnection - Invalid query provided
+2026-06-27 13:30:37.110 [main] INFO  lombokdemo.DatabaseConnection - Connecting to database: jdbc:h2:mem:test with user: sa
+2026-06-27 13:30:37.111 [main] INFO  lombokdemo.DatabaseConnection - Disconnecting from database: jdbc:h2:mem:test
+2026-06-27 13:30:37.113 [main] INFO  lombokdemo.DatabaseConnection - Executing query: SELECT * FROM users
+2026-06-27 13:30:37.114 [main] INFO  lombokdemo.DatabaseConnection - Connecting to database: jdbc:h2:mem:test with user: sa
+2026-06-27 13:30:37.148 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:30:37.149 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:30:37.151 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:30:37.151 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:30:37.152 [main] WARN  miniprojects.banking.BankingService - Insufficient funds in account: ACC-001
+2026-06-27 13:30:37.152 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:30:37.152 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:30:37.153 [main] INFO  miniprojects.banking.BankingService - Withdrew 300.0 from account ACC-001
+2026-06-27 13:30:37.154 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:30:37.154 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:30:37.159 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:30:37.160 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:30:37.160 [main] INFO  miniprojects.banking.BankingService - Deposited 500.0 to account ACC-001
+2026-06-27 13:30:37.162 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:30:37.162 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:30:37.163 [main] INFO  miniprojects.banking.BankingService - Withdrew 200.0 from account ACC-001
+2026-06-27 13:30:37.163 [main] INFO  miniprojects.banking.BankingService - Deposited 200.0 to account ACC-002
+2026-06-27 13:30:37.164 [main] INFO  miniprojects.banking.BankingService - Transferred 200.0 from ACC-001 to ACC-002
+2026-06-27 13:30:37.171 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:30:37.171 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:30:37.171 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:30:37.172 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:30:37.174 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:30:37.174 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:30:37.176 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:30:37.176 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:30:37.176 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:30:37.192 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:30:37.192 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:30:37.192 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:30:37.194 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:30:37.194 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:30:37.194 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:30:37.196 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:30:37.197 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:30:37.197 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:30:37.205 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:30:37.205 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:30:37.207 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:30:37.207 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:30:37.209 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:30:37.209 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:30:37.209 [main] INFO  miniprojects.library.LibraryService - Book borrowed: Java Programming
+2026-06-27 13:30:37.209 [main] WARN  miniprojects.library.LibraryService - Book not available for borrowing: ISBN-001
+2026-06-27 13:30:37.210 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:30:37.211 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:30:37.211 [main] INFO  miniprojects.library.LibraryService - Book borrowed: Java Programming
+2026-06-27 13:30:37.211 [main] INFO  miniprojects.library.LibraryService - Book returned: Java Programming
+2026-06-27 13:30:37.212 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:30:37.212 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:30:37.213 [main] INFO  miniprojects.library.LibraryService - Book borrowed: Java Programming
+2026-06-27 13:30:37.214 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:30:37.215 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:30:37.215 [main] INFO  miniprojects.library.LibraryService - Book borrowed: Java Programming
+2026-06-27 13:30:37.222 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:30:37.223 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:30:37.224 [main] INFO  m.orders.OrderProcessingService - Order processed: Laptop
+2026-06-27 13:30:37.225 [main] WARN  m.orders.OrderProcessingService - Cannot cancel processed order: Laptop
+2026-06-27 13:30:37.226 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:30:37.227 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:30:37.227 [main] INFO  m.orders.OrderProcessingService - Order processed: Laptop
+2026-06-27 13:30:37.230 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:30:37.230 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:30:37.230 [main] INFO  m.orders.OrderProcessingService - Order processed: Laptop
+2026-06-27 13:30:37.232 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:30:37.232 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:30:37.234 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:30:37.234 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:30:37.235 [main] INFO  m.orders.OrderProcessingService - Placing order: Free x1
+2026-06-27 13:30:37.237 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:30:37.237 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:30:37.238 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:30:37.238 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:30:37.244 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:30:37.244 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:30:37.246 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:30:37.247 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:30:37.249 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:30:37.249 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:30:37.252 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:30:37.252 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:30:37.253 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:30:37.253 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:30:37.254 [main] INFO  m.shopping.ShoppingCartService - Clearing cart
+2026-06-27 13:30:37.255 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:30:37.255 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:30:37.263 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:30:37.263 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:30:37.266 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:30:37.267 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:30:37.268 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:30:37.268 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:30:37.269 [main] INFO  m.studentmgmt.StudentService - Adding student: Duplicate
+2026-06-27 13:30:37.270 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:30:37.271 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:30:37.271 [main] INFO  m.studentmgmt.StudentService - Adding student: Charlie
+2026-06-27 13:30:37.272 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:30:37.272 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:30:37.273 [main] INFO  m.studentmgmt.StudentService - Removing student with ID: 1
+2026-06-27 13:30:37.275 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:30:37.275 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:30:39.301 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [springtesting.controller.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-27 13:30:39.501 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration springtesting.SpringTestingApplication for test class springtesting.controller.ProductControllerTest
+2026-06-27 13:30:40.109 [main] INFO  s.controller.ProductControllerTest - Starting ProductControllerTest using Java 21 with PID 22984 (started by fruit in D:\Cognizant-JAVA-FSE-Digital-Nurture-5.0\FSE construct - Programming Languages\Module 4 - Test driven development and Logging framework\JUnit-Framework\test)
+2026-06-27 13:30:40.111 [main] DEBUG s.controller.ProductControllerTest - Running with Spring Boot v3.3.6, Spring v6.1.15
+2026-06-27 13:30:40.112 [main] INFO  s.controller.ProductControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-06-27 13:30:41.352 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-06-27 13:30:41.352 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-06-27 13:30:41.353 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-06-27 13:30:41.374 [main] INFO  s.controller.ProductControllerTest - Started ProductControllerTest in 1.764 seconds (process running for 5.89)
+2026-06-27 13:30:41.679 [main] INFO  s.integration.ProductIntegrationTest - Starting ProductIntegrationTest using Java 21 with PID 22984 (started by fruit in D:\Cognizant-JAVA-FSE-Digital-Nurture-5.0\FSE construct - Programming Languages\Module 4 - Test driven development and Logging framework\JUnit-Framework\test)
+2026-06-27 13:30:41.680 [main] DEBUG s.integration.ProductIntegrationTest - Running with Spring Boot v3.3.6, Spring v6.1.15
+2026-06-27 13:30:41.680 [main] INFO  s.integration.ProductIntegrationTest - The following 1 profile is active: "test"
+2026-06-27 13:30:41.969 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-27 13:30:42.018 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2026-06-27 13:30:42.351 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-27 13:30:42.484 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-27 13:30:42.532 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-27 13:30:42.683 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-27 13:30:42.714 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-27 13:30:42.904 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-06-27 13:30:42.905 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-27 13:30:42.932 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-27 13:30:43.540 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-27 13:30:43.559 [main] DEBUG org.hibernate.SQL - drop table if exists products cascade 
+2026-06-27 13:30:43.568 [main] DEBUG org.hibernate.SQL - create table products (price float(53) not null, id bigint generated by default as identity, category varchar(255), name varchar(255) not null, primary key (id))
+2026-06-27 13:30:43.579 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-27 13:30:43.950 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-27 13:30:44.112 [main] INFO  s.integration.ProductIntegrationTest - Started ProductIntegrationTest in 2.468 seconds (process running for 8.628)
+2026-06-27 13:30:44.150 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.250 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.id=?
+2026-06-27 13:30:44.259 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.261 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.393 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.category=?
+2026-06-27 13:30:44.402 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.636 [main] DEBUG org.hibernate.SQL - select count(*) from products p1_0 where p1_0.id=?
+2026-06-27 13:30:44.642 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.id=?
+2026-06-27 13:30:44.649 [main] DEBUG org.hibernate.SQL - delete from products where id=?
+2026-06-27 13:30:44.652 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.id=?
+2026-06-27 13:30:44.664 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [springtesting.repository.ProductRepositoryTest]: ProductRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-27 13:30:44.689 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration springtesting.SpringTestingApplication for test class springtesting.repository.ProductRepositoryTest
+2026-06-27 13:30:44.716 [main] INFO  s.repository.ProductRepositoryTest - Starting ProductRepositoryTest using Java 21 with PID 22984 (started by fruit in D:\Cognizant-JAVA-FSE-Digital-Nurture-5.0\FSE construct - Programming Languages\Module 4 - Test driven development and Logging framework\JUnit-Framework\test)
+2026-06-27 13:30:44.716 [main] DEBUG s.repository.ProductRepositoryTest - Running with Spring Boot v3.3.6, Spring v6.1.15
+2026-06-27 13:30:44.716 [main] INFO  s.repository.ProductRepositoryTest - The following 1 profile is active: "test"
+2026-06-27 13:30:44.772 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-27 13:30:44.782 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2026-06-27 13:30:44.791 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2026-06-27 13:30:44.811 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:4826c6cc-e0a7-41d3-bbdb-ed3cc598463c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-06-27 13:30:44.836 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-27 13:30:44.840 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-27 13:30:44.854 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-27 13:30:44.856 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-27 13:30:44.882 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-27 13:30:44.882 [main] DEBUG org.hibernate.SQL - drop table if exists products cascade 
+2026-06-27 13:30:44.883 [main] DEBUG org.hibernate.SQL - create table products (price float(53) not null, id bigint generated by default as identity, category varchar(255), name varchar(255) not null, primary key (id))
+2026-06-27 13:30:44.884 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-27 13:30:44.911 [main] INFO  s.repository.ProductRepositoryTest - Started ProductRepositoryTest in 0.218 seconds (process running for 9.427)
+2026-06-27 13:30:44.921 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:30:44.924 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.925 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.926 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.927 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:30:44.935 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:30:44.937 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.938 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.939 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.940 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.945 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:30:44.947 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.949 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.950 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.953 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.category=?
+2026-06-27 13:30:44.959 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:30:44.960 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.962 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.963 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.966 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:30:44.970 [main] DEBUG org.hibernate.SQL - delete from products where id=?
+2026-06-27 13:30:44.970 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:30:44.977 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:30:44.979 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.980 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.981 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:30:44.984 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.price>?
+2026-06-27 13:30:46.288 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-27 13:30:46.289 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists products cascade 
+2026-06-27 13:30:46.292 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-27 13:30:46.294 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-27 13:30:46.295 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-27 13:30:46.295 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists products cascade 
+2026-06-27 13:31:32.289 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:31:32.292 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:31:32.292 [main] INFO  logging.BankingServiceLogger - Deposit request - Account: ACC-001, Amount: -100.0
+2026-06-27 13:31:32.292 [main] WARN  logging.BankingServiceLogger - Invalid deposit amount: -100.0
+2026-06-27 13:31:32.295 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:31:32.295 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:31:32.295 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-002 with initial balance: 500.0
+2026-06-27 13:31:32.295 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-002
+2026-06-27 13:31:32.295 [main] DEBUG logging.BankingServiceLogger - Balance inquiry for account: ACC-002
+2026-06-27 13:31:32.297 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:31:32.297 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:31:32.297 [main] INFO  logging.BankingServiceLogger - Withdrawal request - Account: ACC-001, Amount: 5000.0
+2026-06-27 13:31:32.298 [main] WARN  logging.BankingServiceLogger - Insufficient funds - Account: ACC-001, Balance: 1000.0, Requested: 5000.0
+2026-06-27 13:31:32.299 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:31:32.299 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:31:32.299 [main] INFO  logging.BankingServiceLogger - Withdrawal request - Account: ACC-001, Amount: 300.0
+2026-06-27 13:31:32.299 [main] INFO  logging.BankingServiceLogger - Withdrawal successful - Account: ACC-001, Amount: 300.0
+2026-06-27 13:31:32.300 [main] DEBUG logging.BankingServiceLogger - Balance inquiry for account: ACC-001
+2026-06-27 13:31:32.301 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:31:32.301 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:31:32.302 [main] DEBUG logging.BankingServiceLogger - Balance inquiry for account: FAKE
+2026-06-27 13:31:32.303 [main] INFO  logging.BankingServiceLogger - Creating account: ACC-001 with initial balance: 1000.0
+2026-06-27 13:31:32.304 [main] INFO  logging.BankingServiceLogger - Account created successfully: ACC-001
+2026-06-27 13:31:32.304 [main] INFO  logging.BankingServiceLogger - Deposit request - Account: ACC-001, Amount: 500.0
+2026-06-27 13:31:32.304 [main] INFO  logging.BankingServiceLogger - Deposit successful - Account: ACC-001, New Balance: 1500.0
+2026-06-27 13:31:32.304 [main] DEBUG logging.BankingServiceLogger - Balance inquiry for account: ACC-001
+2026-06-27 13:31:32.309 [main] ERROR logging.LoggingBasics - Division by zero error occurred
+java.lang.ArithmeticException: / by zero
+	at logging.LoggingBasics.demonstrateExceptionLogging(LoggingBasics.java:25)
+	at logging.LoggingBasicsTest.lambda$testExceptionLogging$2(LoggingBasicsTest.java:25)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3168)
+	at logging.LoggingBasicsTest.testExceptionLogging(LoggingBasicsTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-27 13:31:32.314 [main] ERROR logging.LoggingBasics - Null pointer exception: Cannot invoke "String.length()" because "text" is null
+java.lang.NullPointerException: Cannot invoke "String.length()" because "text" is null
+	at logging.LoggingBasics.demonstrateExceptionLogging(LoggingBasics.java:32)
+	at logging.LoggingBasicsTest.lambda$testExceptionLogging$2(LoggingBasicsTest.java:25)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3168)
+	at logging.LoggingBasicsTest.testExceptionLogging(LoggingBasicsTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-27 13:31:32.317 [main] INFO  logging.LoggingBasics - Processing data:   hello  
+2026-06-27 13:31:32.317 [main] DEBUG logging.LoggingBasics - Data length: 9
+2026-06-27 13:31:32.317 [main] INFO  logging.LoggingBasics - Data processed successfully: HELLO
+2026-06-27 13:31:32.318 [main] INFO  logging.LoggingBasics - Processing data: null
+2026-06-27 13:31:32.318 [main] WARN  logging.LoggingBasics - Received null data, returning empty string
+2026-06-27 13:31:32.319 [main] INFO  logging.LoggingBasics - User 'TestUser' logged in after 3 attempts
+2026-06-27 13:31:32.320 [main] DEBUG logging.LoggingBasics - Login details - User: TestUser, Attempts: 3, Timestamp: 1782547292320
+2026-06-27 13:31:32.321 [main] TRACE logging.LoggingBasics - TRACE level: Most detailed information
+2026-06-27 13:31:32.322 [main] DEBUG logging.LoggingBasics - DEBUG level: Debugging information
+2026-06-27 13:31:32.322 [main] INFO  logging.LoggingBasics - INFO level: General information
+2026-06-27 13:31:32.322 [main] WARN  logging.LoggingBasics - WARN level: Warning - potential issue
+2026-06-27 13:31:32.322 [main] ERROR logging.LoggingBasics - ERROR level: Error occurred
+2026-06-27 13:31:32.326 [main] INFO  logging.StudentManagementLogger - Enrolling student - Name: Diana, Course: Biology
+2026-06-27 13:31:32.327 [main] INFO  logging.StudentManagementLogger - Student enrolled - ID: 1
+2026-06-27 13:31:32.327 [main] DEBUG logging.StudentManagementLogger - Adding grade 80 for student ID: 1
+2026-06-27 13:31:32.327 [main] INFO  logging.StudentManagementLogger - Grade added - Student: 1, Grade: 80, Total Grades: 1
+2026-06-27 13:31:32.327 [main] DEBUG logging.StudentManagementLogger - Adding grade 90 for student ID: 1
+2026-06-27 13:31:32.327 [main] INFO  logging.StudentManagementLogger - Grade added - Student: 1, Grade: 90, Total Grades: 2
+2026-06-27 13:31:32.327 [main] DEBUG logging.StudentManagementLogger - Calculating average for student: 1
+2026-06-27 13:31:32.330 [main] INFO  logging.StudentManagementLogger - Average calculated - Student: 1, Average: 85.0
+2026-06-27 13:31:32.332 [main] INFO  logging.StudentManagementLogger - Enrolling student - Name: Bob, Course: Math
+2026-06-27 13:31:32.332 [main] INFO  logging.StudentManagementLogger - Student enrolled - ID: 1
+2026-06-27 13:31:32.334 [main] DEBUG logging.StudentManagementLogger - Adding grade 85 for student ID: 1
+2026-06-27 13:31:32.335 [main] INFO  logging.StudentManagementLogger - Grade added - Student: 1, Grade: 85, Total Grades: 1
+2026-06-27 13:31:32.336 [main] INFO  logging.StudentManagementLogger - Enrolling student - Name: Eve, Course: Chemistry
+2026-06-27 13:31:32.336 [main] INFO  logging.StudentManagementLogger - Student enrolled - ID: 1
+2026-06-27 13:31:32.336 [main] DEBUG logging.StudentManagementLogger - Calculating average for student: 1
+2026-06-27 13:31:32.336 [main] WARN  logging.StudentManagementLogger - No grades available for student: 1
+2026-06-27 13:31:32.337 [main] DEBUG logging.StudentManagementLogger - Adding grade 80 for student ID: 999
+2026-06-27 13:31:32.338 [main] ERROR logging.StudentManagementLogger - Student not found: 999
+2026-06-27 13:31:32.340 [main] INFO  logging.StudentManagementLogger - Enrolling student - Name: Charlie, Course: Physics
+2026-06-27 13:31:32.340 [main] INFO  logging.StudentManagementLogger - Student enrolled - ID: 1
+2026-06-27 13:31:32.341 [main] DEBUG logging.StudentManagementLogger - Adding grade 150 for student ID: 1
+2026-06-27 13:31:32.341 [main] WARN  logging.StudentManagementLogger - Invalid grade value: 150 for student: 1
+2026-06-27 13:31:32.342 [main] INFO  logging.StudentManagementLogger - Enrolling student - Name: Alice, Course: Computer Science
+2026-06-27 13:31:32.342 [main] INFO  logging.StudentManagementLogger - Student enrolled - ID: 1
+2026-06-27 13:31:32.354 [main] INFO  lombokdemo.DatabaseConnection - Executing query: 
+2026-06-27 13:31:32.354 [main] ERROR lombokdemo.DatabaseConnection - Invalid query provided
+2026-06-27 13:31:32.356 [main] INFO  lombokdemo.DatabaseConnection - Connecting to database: jdbc:h2:mem:test with user: sa
+2026-06-27 13:31:32.356 [main] INFO  lombokdemo.DatabaseConnection - Disconnecting from database: jdbc:h2:mem:test
+2026-06-27 13:31:32.357 [main] INFO  lombokdemo.DatabaseConnection - Executing query: SELECT * FROM users
+2026-06-27 13:31:32.358 [main] INFO  lombokdemo.DatabaseConnection - Connecting to database: jdbc:h2:mem:test with user: sa
+2026-06-27 13:31:32.393 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:31:32.394 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:31:32.396 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:31:32.396 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:31:32.397 [main] WARN  miniprojects.banking.BankingService - Insufficient funds in account: ACC-001
+2026-06-27 13:31:32.397 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:31:32.398 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:31:32.398 [main] INFO  miniprojects.banking.BankingService - Withdrew 300.0 from account ACC-001
+2026-06-27 13:31:32.399 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:31:32.399 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:31:32.402 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:31:32.402 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:31:32.402 [main] INFO  miniprojects.banking.BankingService - Deposited 500.0 to account ACC-001
+2026-06-27 13:31:32.403 [main] INFO  miniprojects.banking.BankingService - Creating account for: Alice
+2026-06-27 13:31:32.404 [main] INFO  miniprojects.banking.BankingService - Creating account for: Bob
+2026-06-27 13:31:32.404 [main] INFO  miniprojects.banking.BankingService - Withdrew 200.0 from account ACC-001
+2026-06-27 13:31:32.404 [main] INFO  miniprojects.banking.BankingService - Deposited 200.0 to account ACC-002
+2026-06-27 13:31:32.404 [main] INFO  miniprojects.banking.BankingService - Transferred 200.0 from ACC-001 to ACC-002
+2026-06-27 13:31:32.410 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:31:32.410 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:31:32.410 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:31:32.411 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:31:32.412 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:31:32.412 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:31:32.413 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:31:32.413 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:31:32.413 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:31:32.418 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:31:32.418 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:31:32.418 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:31:32.420 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:31:32.420 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:31:32.420 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:31:32.422 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Alice to department: Engineering
+2026-06-27 13:31:32.422 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Bob to department: Engineering
+2026-06-27 13:31:32.423 [main] INFO  m.employeemgmt.EmployeeService - Adding employee: Charlie to department: Marketing
+2026-06-27 13:31:32.430 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:31:32.431 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:31:32.433 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:31:32.433 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:31:32.435 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:31:32.436 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:31:32.436 [main] INFO  miniprojects.library.LibraryService - Book borrowed: Java Programming
+2026-06-27 13:31:32.436 [main] WARN  miniprojects.library.LibraryService - Book not available for borrowing: ISBN-001
+2026-06-27 13:31:32.438 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:31:32.438 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:31:32.438 [main] INFO  miniprojects.library.LibraryService - Book borrowed: Java Programming
+2026-06-27 13:31:32.438 [main] INFO  miniprojects.library.LibraryService - Book returned: Java Programming
+2026-06-27 13:31:32.439 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:31:32.439 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:31:32.439 [main] INFO  miniprojects.library.LibraryService - Book borrowed: Java Programming
+2026-06-27 13:31:32.440 [main] INFO  miniprojects.library.LibraryService - Adding book: Java Programming by Author A
+2026-06-27 13:31:32.441 [main] INFO  miniprojects.library.LibraryService - Adding book: Design Patterns by Author B
+2026-06-27 13:31:32.441 [main] INFO  miniprojects.library.LibraryService - Book borrowed: Java Programming
+2026-06-27 13:31:32.450 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:31:32.450 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:31:32.451 [main] INFO  m.orders.OrderProcessingService - Order processed: Laptop
+2026-06-27 13:31:32.451 [main] WARN  m.orders.OrderProcessingService - Cannot cancel processed order: Laptop
+2026-06-27 13:31:32.452 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:31:32.453 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:31:32.453 [main] INFO  m.orders.OrderProcessingService - Order processed: Laptop
+2026-06-27 13:31:32.455 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:31:32.455 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:31:32.456 [main] INFO  m.orders.OrderProcessingService - Order processed: Laptop
+2026-06-27 13:31:32.458 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:31:32.458 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:31:32.459 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:31:32.459 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:31:32.460 [main] INFO  m.orders.OrderProcessingService - Placing order: Free x1
+2026-06-27 13:31:32.462 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:31:32.462 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:31:32.463 [main] INFO  m.orders.OrderProcessingService - Placing order: Laptop x1
+2026-06-27 13:31:32.464 [main] INFO  m.orders.OrderProcessingService - Placing order: Phone x2
+2026-06-27 13:31:32.469 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:31:32.469 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:31:32.471 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:31:32.471 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:31:32.472 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:31:32.473 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:31:32.474 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:31:32.474 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:31:32.475 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:31:32.475 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:31:32.475 [main] INFO  m.shopping.ShoppingCartService - Clearing cart
+2026-06-27 13:31:32.476 [main] INFO  m.shopping.ShoppingCartService - Adding item: Laptop x1
+2026-06-27 13:31:32.477 [main] INFO  m.shopping.ShoppingCartService - Adding item: Mouse x2
+2026-06-27 13:31:32.482 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:31:32.482 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:31:32.484 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:31:32.484 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:31:32.486 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:31:32.486 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:31:32.486 [main] INFO  m.studentmgmt.StudentService - Adding student: Duplicate
+2026-06-27 13:31:32.487 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:31:32.488 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:31:32.488 [main] INFO  m.studentmgmt.StudentService - Adding student: Charlie
+2026-06-27 13:31:32.488 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:31:32.489 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:31:32.489 [main] INFO  m.studentmgmt.StudentService - Removing student with ID: 1
+2026-06-27 13:31:32.489 [main] INFO  m.studentmgmt.StudentService - Adding student: Alice
+2026-06-27 13:31:32.489 [main] INFO  m.studentmgmt.StudentService - Adding student: Bob
+2026-06-27 13:31:34.517 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [springtesting.controller.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-27 13:31:34.746 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration springtesting.SpringTestingApplication for test class springtesting.controller.ProductControllerTest
+2026-06-27 13:31:35.249 [main] INFO  s.controller.ProductControllerTest - Starting ProductControllerTest using Java 21 with PID 21288 (started by fruit in D:\Cognizant-JAVA-FSE-Digital-Nurture-5.0\FSE construct - Programming Languages\Module 4 - Test driven development and Logging framework\JUnit-Framework\test)
+2026-06-27 13:31:35.250 [main] DEBUG s.controller.ProductControllerTest - Running with Spring Boot v3.3.6, Spring v6.1.15
+2026-06-27 13:31:35.250 [main] INFO  s.controller.ProductControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-06-27 13:31:36.391 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-06-27 13:31:36.391 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-06-27 13:31:36.392 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-06-27 13:31:36.416 [main] INFO  s.controller.ProductControllerTest - Started ProductControllerTest in 1.574 seconds (process running for 5.828)
+2026-06-27 13:31:36.731 [main] INFO  s.integration.ProductIntegrationTest - Starting ProductIntegrationTest using Java 21 with PID 21288 (started by fruit in D:\Cognizant-JAVA-FSE-Digital-Nurture-5.0\FSE construct - Programming Languages\Module 4 - Test driven development and Logging framework\JUnit-Framework\test)
+2026-06-27 13:31:36.731 [main] DEBUG s.integration.ProductIntegrationTest - Running with Spring Boot v3.3.6, Spring v6.1.15
+2026-06-27 13:31:36.731 [main] INFO  s.integration.ProductIntegrationTest - The following 1 profile is active: "test"
+2026-06-27 13:31:37.035 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-27 13:31:37.084 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2026-06-27 13:31:37.403 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-27 13:31:37.475 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-27 13:31:37.515 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-27 13:31:37.662 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-27 13:31:37.693 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-27 13:31:37.907 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-06-27 13:31:37.908 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-27 13:31:37.940 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-27 13:31:38.621 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-27 13:31:38.641 [main] DEBUG org.hibernate.SQL - drop table if exists products cascade 
+2026-06-27 13:31:38.653 [main] DEBUG org.hibernate.SQL - create table products (price float(53) not null, id bigint generated by default as identity, category varchar(255), name varchar(255) not null, primary key (id))
+2026-06-27 13:31:38.665 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-27 13:31:39.121 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-27 13:31:39.282 [main] INFO  s.integration.ProductIntegrationTest - Started ProductIntegrationTest in 2.588 seconds (process running for 8.695)
+2026-06-27 13:31:39.328 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:39.423 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.id=?
+2026-06-27 13:31:39.436 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:39.438 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:39.559 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.category=?
+2026-06-27 13:31:39.569 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:39.841 [main] DEBUG org.hibernate.SQL - select count(*) from products p1_0 where p1_0.id=?
+2026-06-27 13:31:39.848 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.id=?
+2026-06-27 13:31:39.855 [main] DEBUG org.hibernate.SQL - delete from products where id=?
+2026-06-27 13:31:39.858 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.id=?
+2026-06-27 13:31:39.868 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [springtesting.repository.ProductRepositoryTest]: ProductRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-27 13:31:39.892 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration springtesting.SpringTestingApplication for test class springtesting.repository.ProductRepositoryTest
+2026-06-27 13:31:39.916 [main] INFO  s.repository.ProductRepositoryTest - Starting ProductRepositoryTest using Java 21 with PID 21288 (started by fruit in D:\Cognizant-JAVA-FSE-Digital-Nurture-5.0\FSE construct - Programming Languages\Module 4 - Test driven development and Logging framework\JUnit-Framework\test)
+2026-06-27 13:31:39.916 [main] DEBUG s.repository.ProductRepositoryTest - Running with Spring Boot v3.3.6, Spring v6.1.15
+2026-06-27 13:31:39.916 [main] INFO  s.repository.ProductRepositoryTest - The following 1 profile is active: "test"
+2026-06-27 13:31:39.984 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-27 13:31:39.994 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2026-06-27 13:31:40.003 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2026-06-27 13:31:40.023 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:f922c2d6-d6ff-48a5-b56e-42c90ece1706;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-06-27 13:31:40.065 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-27 13:31:40.068 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-27 13:31:40.075 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-27 13:31:40.077 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-27 13:31:40.103 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-27 13:31:40.104 [main] DEBUG org.hibernate.SQL - drop table if exists products cascade 
+2026-06-27 13:31:40.105 [main] DEBUG org.hibernate.SQL - create table products (price float(53) not null, id bigint generated by default as identity, category varchar(255), name varchar(255) not null, primary key (id))
+2026-06-27 13:31:40.107 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-27 13:31:40.140 [main] INFO  s.repository.ProductRepositoryTest - Started ProductRepositoryTest in 0.244 seconds (process running for 9.552)
+2026-06-27 13:31:40.155 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:31:40.158 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.159 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.160 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.163 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:31:40.171 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:31:40.173 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.175 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.176 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.177 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.184 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:31:40.186 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.188 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.188 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.192 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.category=?
+2026-06-27 13:31:40.199 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:31:40.200 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.202 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.202 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.204 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:31:40.207 [main] DEBUG org.hibernate.SQL - delete from products where id=?
+2026-06-27 13:31:40.208 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:31:40.214 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0
+2026-06-27 13:31:40.215 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.217 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.218 [main] DEBUG org.hibernate.SQL - insert into products (category,name,price,id) values (?,?,?,default)
+2026-06-27 13:31:40.220 [main] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.category,p1_0.name,p1_0.price from products p1_0 where p1_0.price>?
+2026-06-27 13:31:41.542 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-27 13:31:41.542 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists products cascade 
+2026-06-27 13:31:41.546 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-27 13:31:41.549 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-27 13:31:41.550 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-27 13:31:41.551 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists products cascade 

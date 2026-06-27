@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: springtesting.controller.ProductControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.345 s -- in springtesting.controller.ProductControllerTest
