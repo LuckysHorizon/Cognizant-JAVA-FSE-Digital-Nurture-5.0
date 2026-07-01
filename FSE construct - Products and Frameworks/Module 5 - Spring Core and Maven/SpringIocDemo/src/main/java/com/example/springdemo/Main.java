@@ -3,7 +3,8 @@ package com.example.springdemo;
 public class Main {
     public static void main(String [] args)
     {
-        Car car = new Car();
+        Engine engine = new Engine();
+        Car car = new Car(engine);
         car.drive();
     }
 }

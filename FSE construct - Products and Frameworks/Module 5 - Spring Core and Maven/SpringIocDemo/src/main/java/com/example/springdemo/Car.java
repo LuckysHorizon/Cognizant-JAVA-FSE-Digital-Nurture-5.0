@@ -2,9 +2,9 @@ package com.example.springdemo;
 
 public class Car {
     private Engine engine;
-    public Car()
+    public Car(Engine engine)
     {
-        engine = new Engine();
+        this.engine = engine;
         System.out.println("Car object Created");
     }
     public void drive()
