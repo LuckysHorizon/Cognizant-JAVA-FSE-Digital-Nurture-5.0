@@ -6,13 +6,18 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class StudentService {
-    private final StudentRepository repository;
+    private StudentRepository repository;
 
     @Autowired
-    public StudentService(StudentRepository repository)
+    public StudentService()
+    {
+        System.out.println("Service Created");
+    }
+    //Setter Injection
+    @Autowired
+    public void setRepository(StudentRepository repository)
     {
         this.repository = repository;
-        System.out.println("StudentService Bean Created");
     }
     public void registerStudent()
     {
