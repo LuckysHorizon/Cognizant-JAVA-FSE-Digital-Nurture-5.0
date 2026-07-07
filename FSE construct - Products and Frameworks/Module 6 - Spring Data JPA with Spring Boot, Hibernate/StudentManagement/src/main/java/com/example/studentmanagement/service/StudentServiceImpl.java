@@ -1,10 +1,11 @@
 package com.example.studentmanagement.service;
 
 import com.example.studentmanagement.entity.Student;
+import com.example.studentmanagement.projection.StudentProjection;
 import com.example.studentmanagement.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import org.springframework.data.domain.*;
 import java.util.List;
 
 @Service
@@ -51,5 +52,57 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public List<Student> getStudentByName(String name) {
         return repository.findByName(name);
+    }
+    @Override
+    public Page<Student> getStudents(int page,int size){
+
+        Pageable pageable = PageRequest.of(page,size);
+
+        return repository.findAll(pageable);
+
+    }
+    @Override
+    public Page<Student> getStudentsSortedByName(int page,int size){
+
+        Pageable pageable =
+                PageRequest.of(
+                        page,
+                        size,
+                        Sort.by("name"));
+
+        return repository.findAll(pageable);
+
+    }
+    @Override
+    public Page<Student> getStudentsSortedByAgeDesc(int page,int size){
+
+        Pageable pageable =
+                PageRequest.of(
+                        page,
+                        size,
+                        Sort.by("age").descending());
+
+        return repository.findAll(pageable);
+
+    }
+    @Override
+    public Page<Student> getStudentsSortedByAgeDescAndName(int page, int size) {
+
+        Pageable pageable = PageRequest.of(
+                page,
+                size,
+                Sort.by("age")
+                        .descending()
+                        .and(Sort.by("name"))
+        );
+
+        return repository.findAll(pageable);
+    }
+
+    @Override
+    public List<StudentProjection> getStudentsByAge(Integer age){
+
+        return repository.findByAge(age);
+
     }
 }

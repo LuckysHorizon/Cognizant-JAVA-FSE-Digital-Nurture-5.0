@@ -1,8 +1,10 @@
 package com.example.studentmanagement.controller;
 
 import com.example.studentmanagement.entity.Student;
+import com.example.studentmanagement.projection.StudentProjection;
 import com.example.studentmanagement.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -52,5 +54,55 @@ public class StudentController {
     @GetMapping("/name/{name}")
     public List<Student> getStudentByName(@PathVariable String name) {
         return service.getStudentByName(name);
+    }
+
+    @GetMapping("/page")
+
+    public Page<Student> getStudents(
+
+            @RequestParam int page,
+
+            @RequestParam int size){
+
+        return service.getStudents(page,size);
+
+    }
+    @GetMapping("/sort/name")
+
+    public Page<Student> sortByName(
+
+            @RequestParam int page,
+
+            @RequestParam int size){
+
+        return service.getStudentsSortedByName(page,size);
+
+    }
+    @GetMapping("/sort/age")
+
+    public Page<Student> sortByAge(
+
+            @RequestParam int page,
+
+            @RequestParam int size){
+
+        return service.getStudentsSortedByAgeDesc(page,size);
+
+    }
+
+    @GetMapping("/sort/age-name")
+    public Page<Student> sortByAgeAndName(
+            @RequestParam int page,
+            @RequestParam int size) {
+
+        return service.getStudentsSortedByAgeDescAndName(page, size);
+    }
+
+    @GetMapping("/projection/{age}")
+    public List<StudentProjection> getStudentsByAge(
+            @PathVariable Integer age){
+
+        return service.getStudentsByAge(age);
+
     }
 }
