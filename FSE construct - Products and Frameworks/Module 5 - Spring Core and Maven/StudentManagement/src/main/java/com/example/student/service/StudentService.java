@@ -19,10 +19,10 @@ public class StudentService {
     {
         this.repository = repository;
     }
-    public void registerStudent()
+    public String registerStudent()
     {
-        System.out.println("Business Logic Started");
+        System.out.println("Registering Student");
         repository.saveStudent();
-        System.out.println("Business Logic Finished");
+        return "Student Registered Successfully";
     }
 }
