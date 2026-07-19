@@ -1,11 +1,15 @@
 package com.example.springrestpractical.controller;
+import org.springframework.hateoas.EntityModel;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 import com.example.springrestpractical.dto.StudentRequestDTO;
 import com.example.springrestpractical.dto.StudentResponseDTO;
 import com.example.springrestpractical.entity.Student;
 import com.example.springrestpractical.service.StudentService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -41,11 +45,35 @@ public class StudentController
         return ResponseEntity.ok(students);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<StudentResponseDTO> getStudentById(@PathVariable Long id)
+    @GetMapping(value="/{id}", produces = {
+            MediaType.APPLICATION_JSON_VALUE,
+            MediaType.APPLICATION_XML_VALUE
+    })
+    public ResponseEntity<EntityModel<StudentResponseDTO>> getStudentById(@PathVariable Long id)
     {
         StudentResponseDTO student = studentService.getStudentById(id);
-        return ResponseEntity.ok(student);
+
+        EntityModel<StudentResponseDTO> model =
+                EntityModel.of(student);
+        model.add(
+                linkTo(
+                        methodOn(StudentController.class)
+                                .getStudentById(id))
+                        .withSelfRel());
+
+        model.add(
+            linkTo(
+                    methodOn(StudentController.class)
+                            .getAllStudents())
+                    .withRel("allStudents"));
+
+        model.add(
+                linkTo(
+                        methodOn(StudentController.class)
+                                .deleteStudent(id))
+                                .withRel("delete"));
+
+        return ResponseEntity.ok(model);
     }
     @PutMapping("/{id}")
     public ResponseEntity<StudentResponseDTO> updateStudent(

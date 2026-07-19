@@ -1,5 +1,7 @@
 package com.example.springrestpractical.dto;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
+@JacksonXmlRootElement(localName = "Student")
 public class StudentResponseDTO {
 
     private Long id;
