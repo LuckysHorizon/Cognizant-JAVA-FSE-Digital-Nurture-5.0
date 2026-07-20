@@ -5,17 +5,19 @@ Welcome to the **Cognizant JAVA Full Stack Engineer (FSE) Digital Nurture** repo
 ## 📚 Module Overview
 
 ### Engineering Concepts
-* **Module 1 (Design Patterns):** Implementation of fundamental Gang of Four (GoF) patterns, including Singleton and Factory methodologies for object creation.
-* **Module 2 (Data Structures & Algorithms):** Practical algorithms covering Linear/Binary searches (eCommerce) and Dynamic Programming (Financial Forecasting).
-* **Module 4 (TDD & Logging):** Test-Driven Development suites leveraging JUnit 5, Mockito for service mocking, and SLF4J/Logback for application logging.
+* **[Module 1 (Design Patterns)](FSE%20construct%20-%20Engineering%20concepts/Module-1):** Implementation of fundamental Gang of Four (GoF) patterns, including Singleton and Factory methodologies for object creation.
+* **[Module 2 (Data Structures & Algorithms)](FSE%20construct%20-%20Engineering%20concepts/Module-2_DSA):** Practical algorithms covering Linear/Binary searches (eCommerce) and Dynamic Programming (Financial Forecasting).
+
+### Programming Languages
+* **[Module 3 (PL/SQL)](FSE%20construct%20-%20Programming%20Languages/Module%203%20-%20PL):** Database programming with Oracle PL/SQL, featuring Control Structures and Stored Procedures.
+* **[Module 4 (TDD & Logging)](FSE%20construct%20-%20Programming%20Languages/Module%204%20-%20Test%20driven%20development%20and%20Logging):** Test-Driven Development suites leveraging JUnit 5, Mockito for service mocking, and SLF4J/Logback for application logging.
 
 ### Products and Frameworks
-* **Module 3 (PL/SQL):** Database programming with Oracle PL/SQL, featuring Control Structures and Stored Procedures.
-* **Module 5 (Spring Core):** Fundamentals of the Spring Framework, focusing on Inversion of Control (IoC) via Setter and Constructor Dependency Injection.
-* **Module 6 (Spring Data JPA):** Object-Relational Mapping (ORM) using Hibernate. Features CRUD repositories, Derived Queries, HQL, and Native SQL.
-* **Module 7 (Spring REST):** Comprehensive RESTful API development. Includes CRUD endpoints, strict payload Validation, Global Exception Handling (`@ControllerAdvice`), and JWT-based Stateless Authentication.
-* **Module 8 (Microservices):** Distributed systems architecture featuring a Netflix Eureka Naming Server, a Spring Cloud API Gateway, and independent Microservices (Account & Loan) auto-routed via the registry.
-* **Module 9 (React):** Modern frontend web application development. Includes scaffolding via Vite and the integration of aesthetic, component-based UIs using Hooks and JSX.
+* **[Module 5 (Spring Core)](FSE%20construct%20-%20Products%20and%20Frameworks/Module%205%20-%20Spring%20Core%20and%20Maven):** Fundamentals of the Spring Framework, focusing on Inversion of Control (IoC) via Setter and Constructor Dependency Injection.
+* **[Module 6 (Spring Data JPA)](FSE%20construct%20-%20Products%20and%20Frameworks/Module%206%20-%20Spring%20Data%20JPA%20with%20Spring%20Boot%2C%20Hibernate):** Object-Relational Mapping (ORM) using Hibernate. Features CRUD repositories, Derived Queries, HQL, and Native SQL.
+* **[Module 7 (Spring REST)](FSE%20construct%20-%20Products%20and%20Frameworks/Module%207%20-%20Spring%20REST%20using%20Spring%20Boot%203):** Comprehensive RESTful API development. Includes CRUD endpoints, strict payload Validation, Global Exception Handling (`@ControllerAdvice`), and JWT-based Stateless Authentication.
+* **[Module 8 (Microservices)](FSE%20construct%20-%20Products%20and%20Frameworks/Module%208%20-%20Microservices%20with%20API%20gateway):** Distributed systems architecture featuring a Netflix Eureka Naming Server, a Spring Cloud API Gateway, and independent Microservices (Account & Loan) auto-routed via the registry.
+* **[Module 9 (React)](FSE%20construct%20-%20Products%20and%20Frameworks/Module%209%20-%20React):** Modern frontend web application development. Includes scaffolding via Vite and the integration of aesthetic, component-based UIs using Hooks and JSX.
 
 ---
 
