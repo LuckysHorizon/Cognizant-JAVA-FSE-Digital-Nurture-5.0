@@ -1,0 +1,3 @@
+com\cognizant\junit\CalculatorTest.class
+com\cognizant\slf4j\PaymentProcessorTest.class
+com\cognizant\mockito\UserServiceTest.class

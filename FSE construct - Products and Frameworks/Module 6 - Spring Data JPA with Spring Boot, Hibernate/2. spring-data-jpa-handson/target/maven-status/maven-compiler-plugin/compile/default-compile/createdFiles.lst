@@ -1,0 +1,5 @@
+com\cognizant\jpa\DepartmentRepository.class
+com\cognizant\jpa\Department.class
+com\cognizant\jpa\SpringDataJpaOrmApplication.class
+com\cognizant\jpa\Employee.class
+com\cognizant\jpa\EmployeeRepository.class

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="emailService" class="com.cognizant.springcore.EmailMessageService">
+        <property name="senderAddress" value="noreply@cognizant.com"/>
+    </bean>
+
+    <bean id="notificationManager" class="com.cognizant.springcore.NotificationManager">
+        <constructor-arg ref="emailService"/>
+    </bean>
+
+</beans>

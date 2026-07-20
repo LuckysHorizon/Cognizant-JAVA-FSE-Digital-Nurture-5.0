@@ -1,0 +1,5 @@
+com\cognizant\junit\Calculator.class
+com\cognizant\slf4j\PaymentProcessor.class
+com\cognizant\mockito\UserService.class
+com\cognizant\mockito\UserRepository.class
+com\cognizant\mockito\User.class

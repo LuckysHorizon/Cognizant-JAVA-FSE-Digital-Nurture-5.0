@@ -1,0 +1,4 @@
+com\cognizant\jpa\CountryService.class
+com\cognizant\jpa\CountryRepository.class
+com\cognizant\jpa\Country.class
+com\cognizant\jpa\SpringDataJpaApplication.class
